@@ -28,6 +28,7 @@ export default new Vuex.Store({
     SAVE_ALLDONE_ORDERING (state, payload) {
       state.allDone = [...payload]
     }
+
   },
   actions: {
     createTodo ({ commit }, payload) {
@@ -53,6 +54,7 @@ export default new Vuex.Store({
   getters: {
     allTodos (state) {
       const allTodos = Object.keys(state.todos).map(key => state.todos[key])
+
       return allTodos
     },
     allTodo (state) {

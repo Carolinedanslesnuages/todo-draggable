@@ -11,21 +11,25 @@
     </div>
 
     <div class="flex justify-center flex-row">
-      <div class="w-1/4 bg-gray-200 rounded p-2 m-2  h-20">
+
+      <div class="w-1/4 bg-gray-200 rounded p-2 m-2">
+      TODO
         <draggable class="Todos" v-model="allTodo" group="todos">
           <card-word v-for="todo in allTodo" :key="todo.id" :item="todo" />
         </draggable>
       </div>
 
-      <div class="w-1/4 bg-gray-200 rounded p-2 m-2 h-20">
+      <div class="w-1/4 bg-gray-200 rounded p-2 m-2">
+      DOING
         <draggable class="Todos" v-model="allDoing" group="todos">
           <card-word v-for="doing in allDoing" :key="doing.id" :item="doing" />
         </draggable>
       </div>
 
-      <div class="w-1/4 bg-gray-200 rounded p-2 m-2 h-20">
+      <div class="w-1/4 bg-gray-200 rounded p-2 m-2">
+      DONE
         <draggable class="Todos" v-model="allDone" group="todos">
-          <card-word v-for="done in allDone" :key="done.id" :item="done" />
+          <card-word v-for="done in allDone" :key="done.id" :item="done"/>
         </draggable>
       </div>
     </div>
@@ -75,6 +79,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style scoped>
