@@ -1,6 +1,9 @@
 <template>
   <div class="shadow-md rounded bg-blue-700 text-white m-4 px-10 pt-2 pb-2">
-    <p class="text-center text-lg">{{ item.title }}</p>
+    <p
+    class="text-center text-lg">
+    {{ item.title }}
+    </p>
   </div>
 </template>
 
@@ -10,6 +13,10 @@ export default {
     item: {
       type: Object,
       required: true
+    },
+    closed: {
+      type: String,
+      default: ''
     }
   }
 }

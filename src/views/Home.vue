@@ -2,7 +2,7 @@
   <div class="home flex justify-center">
     <router-link :to="{ name: 'create-home' }">
       <button class="btn btn--info t-link-users-home ">
-        Users
+        TO DO
       </button>
     </router-link>
   </div>

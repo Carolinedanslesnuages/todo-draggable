@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <home-school-header/>
+      <todo-header/>
 
       <div>
         <create-card />
@@ -13,13 +13,13 @@
 
 <script>
 import CreateCard from '../components/CreateCard'
-import HomeSchoolHeader from '../components/HomeSchoolHeader'
+import TodoHeader from '../components/TodoHeader'
 import Cards from '@/components/Cards'
 
 export default {
-  name: 'Lecture',
+  name: 'Todo',
   components: {
-    HomeSchoolHeader,
+    TodoHeader,
     CreateCard,
     Cards
   }

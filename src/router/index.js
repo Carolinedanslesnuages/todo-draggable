@@ -7,9 +7,9 @@ const Home = () =>
   import(
     /* webpackChunkName: 'home', webpackPrefetch: true */ '@/views/Home.vue'
   )
-const Lecture = () =>
+const Todo = () =>
   import(
-    /* webpackChunkName: 'home', webpackPrefetch: true */ '@/views/Lecture.vue'
+    /* webpackChunkName: 'home', webpackPrefetch: true */ '@/views/Todo.vue'
   )
 
 const routes = [
@@ -19,9 +19,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/Lecture',
+    path: '/todo',
     name: 'create-home',
-    component: Lecture
+    component: Todo
   }
 ]
 

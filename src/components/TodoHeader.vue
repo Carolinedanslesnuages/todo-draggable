@@ -3,7 +3,7 @@
     <v-app-bar>
 
       <v-toolbar-title>
-        <span class=" titre text-blue-800">HOME SCHOOL </span>
+        <span class=" titre text-blue-800">TODO LIST </span>
       </v-toolbar-title>
 
     </v-app-bar>

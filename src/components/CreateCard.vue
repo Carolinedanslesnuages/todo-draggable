@@ -34,8 +34,10 @@ export default {
         createdAt: new Date(),
         title: this.title
       }
-      this.$store.dispatch('createTodo', todo)
-      this.title = ''
+      if (this.title.length !== 0) {
+        this.$store.dispatch('createTodo', todo)
+        this.title = ''
+      }
     }
   }
 }
